@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAPTCHA Example</title>
+</head>
+<body>
+<h1>Enter the CAPTCHA</h1>
+<!-- Display the CAPTCHA image from the /captcha endpoint -->
+<img src="/captcha" alt="CAPTCHA">
+<form action="/verify-captcha" method="post">
+    <label for="captcha">CAPTCHA:</label>
+    <input type="text" id="captcha" name="captcha">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
